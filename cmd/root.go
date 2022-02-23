@@ -30,7 +30,7 @@ import (
 
 var cfgFile string
 
-var db, _ = sql.Open("sqlite3", "db.sqlite")
+var db, _ = sql.Open("sqlite3", "sqlite.db")
 var productDb = dbInfra.NewProductDb(db)
 var productService = application.ProductService{Persistence: productDb}
 
